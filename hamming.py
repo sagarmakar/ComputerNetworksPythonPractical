@@ -178,7 +178,7 @@ def hammingreceven(inp):
         h_copy.reverse()
         print(int(''.join(map(str, h_copy))))
 
-input1=int(input("Choose 1 for even and 2 for odd HAMMING error detection: \n"))
+input1=int(input("Choose 1 for even and 2 for odd HAMMING error detection: "))
 if input1==1:
     input2= int(input("choose 1 for sender side and 2 for receiver side: \n"))
     if input2 == 1:
