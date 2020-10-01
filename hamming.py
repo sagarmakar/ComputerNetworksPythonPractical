@@ -197,5 +197,4 @@ elif input1==2:
         hammingrecodd(input("enter your data binary string to send here: "))
     else: print("please enter a valid data.")
 
-
 else: print("enter valid data.")
