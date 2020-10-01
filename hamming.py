@@ -137,7 +137,7 @@ def hammingreceven(inp):
         p=2**c
         h.append(int(data[k]))
         h_copy.append(data[k])
-        if(p==(k+1)):
+        if p==(k+1):
             c=c+1
             
     for parity in range(0,len(h)):
@@ -163,7 +163,7 @@ def hammingreceven(inp):
     if error==0:
         print('There is no error in the hamming code received')
 
-    elif error>=len(h_copy)):
+    elif error>=len(h_copy):
         print('Error cannot be detected')
 
     else:
@@ -184,7 +184,7 @@ if input1==1:
     if input2 == 1:
         hammingseneven(input("enter your data binary string to send here: "))
     elif input2 == 2:
-        hammingreceven("enter your data binary string to send here: ")
+        hammingreceven(input("enter your data binary string to send here: "))
     else: print("please enter a valid data.")
 
 
@@ -194,7 +194,7 @@ elif input1==2:
     if input2 == 1:
         hammingsenodd(input("enter your data binary string to send here: "))
     elif input2 == 2:
-        hammingrecodd("enter your data binary string to send here: ")
+        hammingrecodd(input("enter your data binary string to send here: "))
     else: print("please enter a valid data.")
 
 
