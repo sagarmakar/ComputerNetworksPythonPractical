@@ -1,0 +1,17 @@
+
+
+******** Network Statistics ********
+
+Total Packets Sent 		:	31251
+Total Packets Received 		:	31248
+Total Packets Dropped 		:	1
+Total Packets Forwarded 	:	0
+Packet Delivery Ratio 		:	99.99%
+The total hop counts are 	:	31248
+Average Hop Count 		:	1 hops
+Routing Overhead 		:	0
+Normalized Routing Load 	:	0.0000
+Througphut of the network(KBps)	:	15.6240
+Average End to End Delay 	:0.005442478 ms
+Total Energy Consumed  		:500000.000000
+Protocol Energy Consumption 	:100.000000
