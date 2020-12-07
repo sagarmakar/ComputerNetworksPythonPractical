@@ -1,0 +1,3 @@
+TitleText: Throughout vs Radius
+43.088694 1.000000
+0.000000 41736.000000

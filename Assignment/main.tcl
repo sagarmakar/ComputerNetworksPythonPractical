@@ -16,6 +16,8 @@ set val(new1)   45
 set val(new2)   30 
 
 set ns [new Simulator]
+$ns rtproto DV
+
 
 
 set topo       [new Topography]
@@ -71,9 +73,6 @@ $n2 set X_ 200.0
 $n2 set Y_ 200.0
 $n2 set Z_ 0.0
 
-#$ns at 10.0 "$n0 setdest 250.0 250.0 3.0"
-#$ns at 15.0 "$n1 setdest 45.0 285.0 5.0"
-#$ns at 110.0 "$n0 setdest 480.0 300.0 5.0" 
 
 $ns at 0.0 "$n0 setdest 200.0 2.0 0.0"
 $ns at 0.0 "$n1 setdest 2.0 200.0 0.0"
