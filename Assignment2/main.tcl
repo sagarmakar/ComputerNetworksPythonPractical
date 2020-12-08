@@ -33,7 +33,7 @@ create-god $val(nn)
 set namfile [open tracingfile.nam w]
 $ns namtrace-all $namfile
 $ns namtrace-all-wireless $namfile $val(x) $val(y)
-set chan [new $val(chan)];#Create wireless channel
+set chan [new $val(chan)];
 
 
 $ns node-config -adhocRouting  $val(rp) \
@@ -150,12 +150,11 @@ $n20 set Z_ 0.0
 
 for {set i 0} {$i < $val(nn) } { incr i }  {
 	$ns at 0.0 "\$n$i setdest $val(new0) $val(new1) $val(new2)"
-	incr val(new0) 10
-	incr val(new1) 10
-	incr val(new2) 10
+	incr val(new0) 12
+	incr val(new1) 12
+	incr val(new2) 0
 }
   
-#Setup a UDP connection
 set udp0 [new Agent/UDP]
 $ns attach-agent $n18 $udp0
 $ns attach-agent $n0 $udp0
@@ -189,7 +188,6 @@ $ns connect $udp2 $null4
 $udp2 set packetSize_ 180
 
 
-#Setup a CBR Application over UDP connection
 set cbr0 [new Application/Traffic/CBR]
 $cbr0 attach-agent $udp0
 $cbr0 set packetSize_ 120
